@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">SASE National Conference Flight Information 2024</h1>
+    <p id="description">Please complete this form by August 30th, 2024 or as soon as you have your flight information. </p>
+  </head>
+  <body> 
+    <form id="survey-form">
+      
+      <label for="name-label" id="name-label"> What is your first and last name?
+        <input id="name" type="text" required placeholder="name here"></label><br>
+      <label for="email" id="email-label"> 
+        What is your email? <input id="email" type="email" required placeholder="email-here">
+      </label><br>
+      <label for="number-label" id="number-label"> What is your phone number?<input id="number" type="number" min="0" max="9999999999" placeholder="number here"></label><br>
+      
+      <label for="grade year"> What year are you?
+
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Freshman</option>
+          <option value="2">Sophomore</option>
+          <option value="3">Junior</option>
+          <option value="4">Senior</option>
+          <option value="5">Graduate Student</option>
+        </select> <br>
+
+  <legend>What department are you apart of? </legend>
+      <label for="eecs-dep">  <input type="radio" id="eecs-dep" name="department" class="inline" checked value="eecs"> EECS </label> <br>
+      <label for="mabe-dep"> <input type="radio" id="mabe-dep" name="department" value="mabe"> MABE </label> <br>
+
+  <label for="airport"> What airport are you leaving from? <br>
+    <input class="inline" id="airport" type="checkbox" name="airport" required value="tys"> TYS </input>
+    <input class="inline" id="airport" type="checkbox" name="airport" required value="bna"> BNA </input>
+    <input class="inline" id="airport" type="checkbox" name="airport" required value="atl"> ATL </input> 
+    <br>
+
+    <label for="reason">Why do you want to come?
+      <textarea id="reason" name="reason" rows="3" cols="30" placeholder="I would like to come on the trip because..."></textarea>
+    </label>
+
+    <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
